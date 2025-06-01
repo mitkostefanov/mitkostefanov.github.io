@@ -4173,3 +4173,19 @@ input, select, textarea {
   line-height: 1.6;
   color: #cccccc; /* lighter text */
 }
+
+#banner {
+  color: #ffffff !important; /* force white text */
+}
+
+#banner h2 {
+  color: #ffffff !important;
+  font-weight: 800;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4); /* add clarity */
+}
+
+#banner p {
+  color: #dddddd !important;
+  font-size: 1.25rem;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4); /* subtle shadow to boost contrast */
+}
