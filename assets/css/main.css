@@ -4204,3 +4204,12 @@ input, select, textarea {
 #skills ul.features li::before {
   display: none !important;
 }
+#contact ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#contact ul li::before {
+  display: none !important;
+}
