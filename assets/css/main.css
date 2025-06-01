@@ -4189,3 +4189,10 @@ input, select, textarea {
   font-size: 1.25rem;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.4); /* subtle shadow to boost contrast */
 }
+#skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+#skills ul {
+  text-align: center;
+}
