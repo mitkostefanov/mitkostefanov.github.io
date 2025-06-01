@@ -4129,7 +4129,8 @@ input, select, textarea {
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  background: none;
+  background: #fff;
+  border: 2px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
