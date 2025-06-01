@@ -4196,3 +4196,11 @@ input, select, textarea {
 #skills ul {
   text-align: center;
 }
+#skills ul.features {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+#skills ul.features li::before {
+  display: none !important;
+}
