@@ -3507,7 +3507,7 @@ input, select, textarea {
 					top: 0;
 				}
 
-			#banner .content .image {
+#banner .content .image {
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -3516,7 +3516,7 @@ input, select, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; /* prevent shrinking */
+    flex-shrink: 0;
 }
 
 #banner .content .image img {
@@ -3524,7 +3524,6 @@ input, select, textarea {
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
-    object-position: center;
 }
 
 
