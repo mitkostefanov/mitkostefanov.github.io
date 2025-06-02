@@ -105,6 +105,9 @@ Coming soon!</p>
                 </div>
             </div>
         </form>
+        <p id="thank-you-message" style="display:none; color: #00ff99; margin-top: 1em; font-weight: bold; text-align: center;">
+  Thank you for signing up!
+        </p>
     </div>
 </section>
 
@@ -126,6 +129,27 @@ Coming soon!</p>
         </div>
 
         <!-- Scripts -->
+         <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form.cta");
+    const emailInput = document.getElementById("email");
+    const message = document.getElementById("thank-you-message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (emailInput.checkValidity()) {
+        message.style.display = "block";
+        emailInput.value = "";
+      } else {
+        message.textContent = "Please enter a valid email address.";
+        message.style.color = "#ff4444";
+        message.style.display = "block";
+      }
+    });
+  });
+</script>
+
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/jquery.scrolly.min.js"></script>
             <script src="assets/js/jquery.dropotron.min.js"></script>
