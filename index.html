@@ -138,17 +138,20 @@ Coming soon!</p>
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      if (emailInput.checkValidity()) {
+      if (emailInput.checkValidity() && emailInput.value.trim() !== "") {
+        message.textContent = "Thank you for signing up!";
+        message.style.color = "#4CAF50"; // green
         message.style.display = "block";
         emailInput.value = "";
       } else {
         message.textContent = "Please enter a valid email address.";
-        message.style.color = "#ff4444";
+        message.style.color = "#ff4444"; // red
         message.style.display = "block";
       }
     });
   });
 </script>
+
 
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/jquery.scrolly.min.js"></script>
